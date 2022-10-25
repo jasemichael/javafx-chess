@@ -9,11 +9,7 @@ public class Board implements IBoard {
         _board = board;
     }
 
-    public IPiece getPiece(int row, int column) {
-        return _board[row][column].getCurrentPiece();
-    }
-
-    public void setPiece(IPiece piece, int row, int column) {
-        _board[row][column].setCurrentPiece(piece);
+    public ITile getTile(int row, int column) {
+        return _board[row][column];
     }
 }

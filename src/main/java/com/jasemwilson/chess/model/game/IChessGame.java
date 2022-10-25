@@ -1,6 +1,6 @@
 package com.jasemwilson.chess.model.game;
 
-public interface IGame {
+public interface IChessGame {
     public void setupBoard();
 
     public void startTimer();

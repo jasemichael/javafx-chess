@@ -1,6 +1,7 @@
 package com.jasemwilson.chess.model.piece;
 
-import com.jasemwilson.chess.model.board.ITile;
+import com.jasemwilson.chess.model.board.IBoard;
+import com.jasemwilson.chess.model.board.IPosition;
 import com.jasemwilson.chess.model.player.IPlayer;
 
 public abstract class PieceBase implements IPiece {
@@ -10,4 +11,6 @@ public abstract class PieceBase implements IPiece {
     public PieceBase(IPlayer owner) {
         _owner = owner;
     }
+
+    public abstract IMove[] getPossibleMoves(IBoard[][] board);
 }
