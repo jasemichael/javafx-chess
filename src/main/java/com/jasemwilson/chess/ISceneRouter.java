@@ -1,9 +1,10 @@
 package com.jasemwilson.chess;
 
-import com.jasemwilson.chess.controllers.Controller;
+import com.jasemwilson.chess.views.MenuView;
+import com.jasemwilson.chess.views.View;
 
-import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
 
 public interface ISceneRouter {
-    public void route(String route, Controller controller) throws IOException;
+    public void navigateToView(String viewName);
 }
